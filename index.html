@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f59e0b">
+<title>Yellow Corn | الذرة الصفراء</title>
+<style>
+:root{--gold:#f59e0b;--gold-dark:#b45309;--gold-pale:#fffbeb;--ink:#172033;--muted:#64748b;--line:#e2e8f0;--surface:#fff;--bg:#fafafa;--radius:20px;--shadow:0 12px 34px #17203312}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #fbbf24;outline-offset:2px}.container{width:min(1160px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #fde68a}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}.logo{width:48px;height:48px;display:grid;place-items:center;border-radius:17px;background:#fbbf24;border:2px solid #fde68a;font-size:26px;box-shadow:0 5px 12px #92400e18}.brand h1{font-size:20px;line-height:1;margin:0;font-weight:900;letter-spacing:-.5px}.brand h1 span{color:var(--gold-dark)}.brand small{display:block;margin-top:5px;color:var(--muted);font-weight:700;letter-spacing:.4px}.nav-actions{display:flex;align-items:center;gap:8px}.lang-switch{display:flex;background:#f1f5f9;padding:4px;border-radius:12px;border:1px solid var(--line)}.lang-switch button{border:0;background:transparent;padding:8px 10px;border-radius:9px;font-weight:800;color:#64748b}.lang-switch button.active{background:white;color:var(--gold-dark);box-shadow:0 1px 5px #0001}.btn{border:0;border-radius:12px;padding:11px 15px;font-weight:800;transition:.15s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{transform:translateY(-1px)}.btn-gold{background:var(--gold);color:white;box-shadow:0 5px 12px #d9770622}.btn-gold:hover{background:#d97706}.btn-light{background:var(--gold-pale);color:#92400e;border:1px solid #fcd34d}.btn-outline{background:white;border:1px solid var(--line);color:var(--ink)}.cart-count{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 5px;border-radius:20px;background:white;color:#92400e;font-size:12px}.hero{padding:62px 0 58px;text-align:center;border-bottom:4px solid #fcd34d;background-color:#fbbf24;background-image:radial-gradient(#d97706 0.7px,transparent .8px),radial-gradient(#d97706 .7px,#fbbf24 .8px);background-size:24px 24px;background-position:0 0,12px 12px}.hero-inner{background:#fffbebd9;backdrop-filter:blur(3px);border:1px solid #fff8;width:min(760px,100%);margin:auto;padding:30px 20px;border-radius:28px}.pill{display:inline-block;background:white;color:#92400e;padding:7px 13px;border-radius:99px;font-size:12px;font-weight:900;letter-spacing:.5px}.hero h2{font-size:clamp(30px,5vw,48px);line-height:1.08;letter-spacing:-1.5px;margin:16px 0 12px;font-weight:950}.hero p{max-width:590px;margin:0 auto;color:#475569;font-weight:600;line-height:1.7}.main{padding:34px 0 58px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:20px}.section-head h2{margin:0;font-size:27px;letter-spacing:-.7px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:14px}.category-row{display:flex;gap:9px;overflow:auto;padding:2px 1px 14px;margin-bottom:16px;scrollbar-width:thin}.cat-btn{white-space:nowrap;border:1px solid var(--line);background:white;color:#475569;border-radius:14px;padding:11px 16px;font-size:14px;font-weight:800}.cat-btn.active{background:var(--gold);color:white;border-color:var(--gold);box-shadow:0 5px 12px #d9770622}.menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product-card{overflow:hidden;background:white;border:1px solid #e9edf2;border-radius:var(--radius);box-shadow:0 5px 18px #17203308;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}.product-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.product-art{min-height:148px;display:grid;place-items:center;background:linear-gradient(135deg,#fffbeb,#fef3c7);font-size:76px;position:relative}.product-tag{position:absolute;top:12px;inset-inline-start:12px;background:white;border:1px solid #fde68a;border-radius:99px;padding:5px 9px;color:#92400e;font-size:11px;font-weight:900}.product-info{padding:17px;display:flex;flex-direction:column;flex:1}.product-info h3{margin:0 0 7px;font-size:18px}.product-info p{margin:0 0 16px;color:var(--muted);font-size:13px;line-height:1.55;flex:1}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px}.price{font-size:19px;font-weight:950;color:#92400e;white-space:nowrap}.price small{font-size:11px;color:var(--muted);font-weight:700}.add-btn{border:0;background:#fff7df;color:#92400e;border-radius:11px;padding:10px 12px;font-weight:900}.add-btn:hover{background:#fde68a}.empty-state{grid-column:1/-1;text-align:center;padding:42px 20px;background:white;border:1px dashed #cbd5e1;border-radius:18px;color:var(--muted)}.info-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.info-card{background:white;border:1px solid var(--line);border-radius:16px;padding:17px}.info-card strong{display:block;margin-bottom:5px}.info-card span{font-size:13px;color:var(--muted);line-height:1.5}.footer{background:#172033;color:#e2e8f0;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.footer p{margin:4px 0;color:#94a3b8;font-size:12px}.overlay{position:fixed;inset:0;background:#0f172acc;backdrop-filter:blur(3px);z-index:30;display:flex;justify-content:flex-end}.overlay[hidden]{display:none}.drawer{background:white;width:min(440px,100%);height:100%;display:flex;flex-direction:column;box-shadow:-12px 0 40px #0002}.drawer-head{padding:20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.drawer-head h2{font-size:20px;margin:0}.icon-btn{border:0;background:#f1f5f9;border-radius:10px;width:38px;height:38px;font-size:21px;color:#475569}.cart-items{flex:1;overflow:auto;padding:16px 20px}.cart-empty{text-align:center;padding:48px 12px;color:var(--muted)}.cart-empty .emoji{font-size:45px}.cart-line{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #f1f5f9}.cart-emoji{width:52px;height:52px;display:grid;place-items:center;background:#fffbeb;border-radius:13px;font-size:28px}.cart-line h4{margin:0 0 4px;font-size:14px}.cart-line .unit-price{font-size:12px;color:var(--muted)}.qty{display:flex;align-items:center;gap:9px;margin-top:9px}.qty button{width:27px;height:27px;border:1px solid var(--line);border-radius:8px;background:white;font-weight:900}.qty span{min-width:12px;text-align:center;font-weight:900;font-size:13px}.line-total{font-weight:900;font-size:13px;white-space:nowrap}.remove-btn{border:0;background:transparent;color:#dc2626;font-size:11px;padding:5px 0;display:block}.checkout-area{padding:18px 20px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#f8fafc;max-height:62vh;overflow:auto}.summary-row{display:flex;justify-content:space-between;gap:12px;margin:7px 0;font-size:14px;color:#475569}.summary-row.total{padding-top:12px;margin-top:12px;border-top:1px solid var(--line);font-size:18px;font-weight:950;color:var(--ink)}.summary-row.total span:last-child{color:#b45309}.tiny-note{font-size:11px;color:var(--muted);line-height:1.5;margin:8px 0}.payment-label,.field-label{display:block;font-size:12px;font-weight:900;color:#475569;margin:14px 0 7px}.payment-options{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.payment-options label{background:white;border:1px solid var(--line);border-radius:10px;padding:10px 5px;text-align:center;font-size:12px;font-weight:800}.payment-options input{accent-color:#d97706}.checkout-btn{width:100%;margin-top:14px}.modal-wrap{position:fixed;inset:0;z-index:40;background:#0f172acc;display:grid;place-items:center;padding:16px;overflow:auto}.modal-wrap[hidden]{display:none}.modal{position:relative;width:min(460px,100%);background:white;border-radius:24px;padding:26px;box-shadow:0 24px 80px #0003}.modal h2{margin:0 0 6px;font-size:25px}.modal p{color:var(--muted);font-size:13px;line-height:1.55}.modal-close{position:absolute;top:14px;inset-inline-end:14px}.field{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:11px;background:white}.field:focus{border-color:#f59e0b;outline:3px solid #fef3c7}.field-row{display:flex;gap:8px}.field-row .field{min-width:0}.modal-actions{display:grid;gap:10px;margin-top:17px}.notice{padding:12px;border-radius:12px;background:#fffbeb;border:1px solid #fde68a;color:#92400e;font-size:12px;line-height:1.55;margin:12px 0}.status{font-size:13px;color:#92400e;margin-top:10px;min-height:18px}.order-success{font-size:52px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}body[dir="rtl"] .product-bottom,body[dir="rtl"] .section-head{direction:rtl}body[dir="rtl"] .drawer{margin-inline-start:auto;margin-inline-end:0}body[dir="rtl"] .cart-line{direction:rtl}body[dir="rtl"] .nav,body[dir="rtl"] .nav-actions{direction:rtl}
+@media(max-width:850px){.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:38px 0}.hero-inner{padding:24px 16px}.info-strip{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}@media(max-width:560px){.container{width:calc(100% - 24px)}.nav{min-height:68px}.logo{width:40px;height:40px;font-size:22px}.brand h1{font-size:17px}.brand small{font-size:10px}.nav-actions{gap:5px}.lang-switch button{padding:7px 8px}.nav-login{font-size:0;padding:10px}.nav-login span{font-size:15px}.cart-trigger{padding:10px}.hero h2{letter-spacing:-.8px}.main{padding-top:25px}.menu-grid{grid-template-columns:1fr;gap:13px}.product-art{min-height:115px;font-size:61px}.product-info{padding:14px}.product-info h3{font-size:17px}.section-head h2{font-size:24px}.modal{padding:22px 18px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.checkout-area{max-height:68vh}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#" aria-label="Yellow Corn home">
+      <div class="logo" aria-hidden="true">🍿</div>
+      <div><h1><span>YELLOW</span> CORN</h1><small data-i18n="brandSub">الذرة الصفراء - KSA</small></div>
+    </a>
+    <div class="nav-actions">
+      <div class="lang-switch" aria-label="Language">
+        <button id="langEN" class="active" type="button" onclick="setLanguage('en')">EN</button>
+        <button id="langAR" type="button" onclick="setLanguage('ar')">عربي</button>
+      </div>
+      <button class="btn btn-light nav-login" type="button" onclick="openAuth()"><span aria-hidden="true">♙</span><span data-i18n="signIn">Sign In</span></button>
+      <button class="btn btn-gold cart-trigger" type="button" onclick="toggleCart()" aria-label="Open cart">🛒 <span class="cart-label" data-i18n="cart">Cart</span> <span id="cartCount" class="cart-count">0</span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container"><div class="hero-inner">
+    <span class="pill" data-i18n="heroBadge">✨ SAUDI ARABIA'S FAVORITE SNACK SPOT</span>
+    <h2 data-i18n="heroTitle">Taste the Golden Crunch</h2>
+    <p data-i18n="heroDesc">Freshly popped popcorn, warm sweet corn, icy slushies and refreshing drinks — made for your happy moments.</p>
+    <div style="margin-top:20px"><button class="btn btn-gold" type="button" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})" data-i18n="explore">Explore the menu ↓</button></div>
+  </div></div>
+</section>
+
+<main class="container main" id="menu">
+  <div class="section-head"><div><h2 data-i18n="menuTitle">Our Menu</h2><p data-i18n="menuSub">Fresh snacks and cool drinks, made to order.</p></div><span class="pill" data-i18n="vatNote">Prices in SAR · VAT included</span></div>
+  <nav class="category-row" id="categories" aria-label="Product categories"></nav>
+  <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+  <div class="info-strip">
+    <div class="info-card"><strong>🌽 <span data-i18n="freshTitle">Freshly prepared</span></strong><span data-i18n="freshDesc">Your snack is prepared when you order.</span></div>
+    <div class="info-card"><strong>💳 <span data-i18n="payTitle">Flexible payment</span></strong><span data-i18n="payDesc">Choose your preferred payment option at checkout.</span></div>
+    <div class="info-card"><strong>🧾 <span data-i18n="clearTitle">Clear pricing</span></strong><span data-i18n="clearDesc">Review your order total before placing an order.</span></div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container footer-inner"><div><strong>🌽 YELLOW CORN</strong><p data-i18n="footerLine">A golden little moment, every day.</p></div><p>© <span id="year"></span> Yellow Corn · <span data-i18n="ksa">Saudi Arabia</span></p></div></footer>
+
+<div class="overlay" id="cartOverlay" hidden onclick="if(event.target===this)toggleCart()">
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartHeading">
+    <div class="drawer-head"><h2 id="cartHeading" data-i18n="yourOrder">Your Order</h2><button class="icon-btn" type="button" onclick="toggleCart()" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="checkout-area">
+      <div class="summary-row"><span data-i18n="subtotal">Subtotal (excl. VAT)</span><strong id="subtotal">SAR 0.00</strong></div>
+      <div class="summary-row"><span data-i18n="vat">VAT (15%)</span><span id="vatAmount">SAR 0.00</span></div>
+      <div class="summary-row total"><span data-i18n="total">Total</span><span id="grandTotal">SAR 0.00</span></div>
+      <p class="tiny-note" data-i18n="vatDisclaimer">Demo tax calculation: menu prices are treated as VAT-inclusive. Confirm the business's actual VAT setup before launch.</p>
+      <span class="payment-label" data-i18n="paymentMethod">Payment method</span>
+      <div class="payment-options">
+        <label><input type="radio" name="payment" value="mada" checked> MADA</label>
+        <label><input type="radio" name="payment" value="card"> <span data-i18n="card">Visa / MC</span></label>
+        <label><input type="radio" name="payment" value="cod"> <span data-i18n="cash">Cash</span></label>
+      </div>
+      <button class="btn btn-gold checkout-btn" type="button" onclick="beginCheckout()" data-i18n="checkout">Continue to checkout</button>
+    </div>
+  </aside>
+</div>
+
+<div class="modal-wrap" id="authModal" hidden onclick="if(event.target===this)closeModal('authModal')">
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button class="icon-btn modal-close" type="button" onclick="closeModal('authModal')" aria-label="Close">×</button>
+    <h2 id="authTitle" data-i18n="signIn">Sign In</h2>
+    <p data-i18n="authDesc">Sign-in is not connected yet. Choose an option to see the integration requirements.</p>
+    <div class="notice" data-i18n="authNotice">Demo only: no OTP is sent and no Google account is authenticated on this static page.</div>
+    <div class="modal-actions">
+      <button class="btn btn-outline" type="button" onclick="showAuthInfo('phone')" data-i18n="mobileOtp">Mobile number + OTP</button>
+      <button class="btn btn-outline" type="button" onclick="showAuthInfo('google')" data-i18n="googleSignIn">Continue with Google</button>
+    </div>
+    <div class="status" id="authStatus" role="status" aria-live="polite"></div>
+    <button class="btn btn-light" style="width:100%;margin-top:14px" type="button" onclick="closeModal('authModal')" data-i18n="close">Close</button>
+  </section>
+</div>
+
+<div class="modal-wrap" id="checkoutModal" hidden onclick="if(event.target===this)closeModal('checkoutModal')">
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutHeading">
+    <button class="icon-btn modal-close" type="button" onclick="closeModal('checkoutModal')" aria-label="Close">×</button>
+    <h2 id="checkoutHeading" data-i18n="checkoutTitle">Delivery details</h2>
+    <p data-i18n="checkoutDesc">Enter details to preview your order. This demo will not submit a real order or charge you.</p>
+    <form id="checkoutForm">
+      <div class="form-grid">
+        <div class="full"><label class="field-label" for="customerName" data-i18n="fullName">Full name</label><input class="field" id="customerName" name="customerName" autocomplete="name" required maxlength="100" placeholder="Your name"></div>
+        <div class="full"><label class="field-label" for="customerPhone" data-i18n="mobileNumber">Saudi mobile number</label><input class="field" id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" inputmode="tel" required pattern="(\\+?966|0)?5[0-9]{8}" placeholder="05XXXXXXXX"></div>
+        <div class="full"><label class="field-label" for="customerAddress" data-i18n="deliveryAddress">Delivery address</label><textarea class="field" id="customerAddress" name="customerAddress" rows="2" required maxlength="500" placeholder="District, street, building"></textarea></div>
+        <div class="full"><label class="field-label" for="orderNotes" data-i18n="orderNotes">Order notes (optional)</label><input class="field" id="orderNotes" name="orderNotes" maxlength="300" placeholder="Any special request?"></div>
+      </div>
+      <div class="notice" id="checkoutSummary"></div>
+      <button class="btn btn-gold" style="width:100%" type="submit" data-i18n="previewOrder">Preview demo order</button>
+    </form>
+    <div class="status" id="checkoutStatus" role="status" aria-live="polite"></div>
+  </section>
+</div>
+
+<div class="modal-wrap" id="resultModal" hidden onclick="if(event.target===this)closeModal('resultModal')">
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+    <button class="icon-btn modal-close" type="button" onclick="closeModal('resultModal')" aria-label="Close">×</button>
+    <div class="order-success">🧾</div><h2 id="resultTitle" data-i18n="demoOrderTitle">Order preview ready</h2>
+    <p id="resultText"></p>
+    <div class="notice" data-i18n="demoOrderNotice">This is only a local preview. No order was sent to a store and no payment was taken.</div>
+    <button class="btn btn-gold" style="width:100%" type="button" onclick="closeModal('resultModal')" data-i18n="done">Done</button>
+  </section>
+</div>
+
+<script>
+"use strict";
+const products = [
+ {id:"classic-popcorn",cat:"popcorn",emoji:"🍿",name:{en:"Classic Popcorn",ar:"فشار كلاسيكي"},desc:{en:"Light, crispy and freshly popped.",ar:"خفيف ومقرمش ومحضر طازجًا."},price:8,tag:{en:"Bestseller",ar:"الأكثر مبيعًا"}},
+ {id:"caramel-popcorn",cat:"popcorn",emoji:"🍿",name:{en:"Caramel Popcorn",ar:"فشار بالكراميل"},desc:{en:"Crunchy popcorn with a sweet caramel coating.",ar:"فشار مقرمش مغطى بالكراميل الحلو."},price:12,tag:{en:"Sweet",ar:"حلو"}},
+ {id:"cheese-popcorn",cat:"popcorn",emoji:"🧀",name:{en:"Cheese Popcorn",ar:"فشار بالجبن"},desc:{en:"A savory cheesy snack for movie time.",ar:"وجبة خفيفة بنكهة الجبن لوقت الأفلام."},price:11,tag:{en:"Savory",ar:"مالح"}},
+ {id:"butter-corn",cat:"corn",emoji:"🌽",name:{en:"Butter Sweet Corn",ar:"ذرة حلوة بالزبدة"},desc:{en:"Warm sweet corn with a buttery finish.",ar:"ذرة حلوة دافئة بلمسة من الزبدة."},price:10,tag:{en:"Warm",ar:"دافئ"}},
+ {id:"spicy-corn",cat:"corn",emoji:"🌶️",name:{en:"Spicy Sweet Corn",ar:"ذرة حلوة حارة"},desc:{en:"Sweet corn with a gentle spicy kick.",ar:"ذرة حلوة مع نكهة حارة خفيفة."},price:11,tag:{en:"Spicy",ar:"حار"}},
+ {id:"cheese-corn",cat:"corn",emoji:"🌽",name:{en:"Cheesy Corn Cup",ar:"كوب ذرة بالجبن"},desc:{en:"Creamy cheese and warm golden corn.",ar:"جبن كريمي مع ذرة ذهبية دافئة."},price:12,tag:{en:"Popular",ar:"شائع"}},
+ {id:"blue-slush",cat:"slush",emoji:"🧊",name:{en:"Blue Raspberry Slush",ar:"سلاش التوت الأزرق"},desc:{en:"An icy, fruity blue slush drink.",ar:"مشروب سلاش أزرق مثلج بطعم الفاكهة."},price:9,tag:{en:"Chilled",ar:"مثلج"}},
+ {id:"strawberry-slush",cat:"slush",emoji:"🍓",name:{en:"Strawberry Slush",ar:"سلاش الفراولة"},desc:{en:"A sweet strawberry-flavored icy treat.",ar:"مشروب مثلج حلو بنكهة الفراولة."},price:9,tag:{en:"Fruity",ar:"فاكهي"}},
+ {id:"lemon-mint",cat:"slush",emoji:"🍋",name:{en:"Lemon Mint Slush",ar:"سلاش الليمون والنعناع"},desc:{en:"Zesty lemon and refreshing mint.",ar:"ليمون منعش مع النعناع."},price:10,tag:{en:"Refreshing",ar:"منعش"}},
+ {id:"iced-coffee",cat:"beverages",emoji:"🧋",name:{en:"Iced Coffee",ar:"قهوة مثلجة"},desc:{en:"Chilled coffee served over ice.",ar:"قهوة باردة تقدم مع الثلج."},price:13,tag:{en:"Cold drink",ar:"مشروب بارد"}},
+ {id:"water",cat:"beverages",emoji:"💧",name:{en:"Bottled Water",ar:"مياه معبأة"},desc:{en:"A refreshing bottle of drinking water.",ar:"زجاجة مياه شرب منعشة."},price:2,tag:{en:"Everyday",ar:"يومي"}},
+ {id:"orange-juice",cat:"beverages",emoji:"🍊",name:{en:"Orange Juice",ar:"عصير البرتقال"},desc:{en:"A bright citrus drink, served chilled.",ar:"مشروب حمضيات منعش يقدم باردًا."},price:8,tag:{en:"Citrus",ar:"حمضيات"}}
+];
+const i18n = {
+ en:{brandSub:"الذرة الصفراء - KSA",signIn:"Sign In",cart:"Cart",heroBadge:"✨ SAUDI ARABIA'S FAVORITE SNACK SPOT",heroTitle:"Taste the Golden Crunch",heroDesc:"Freshly popped popcorn, warm sweet corn, icy slushies and refreshing drinks — made for your happy moments.",explore:"Explore the menu ↓",menuTitle:"Our Menu",menuSub:"Fresh snacks and cool drinks, made to order.",vatNote:"Prices in SAR · VAT included",all:"All items",popcorn:"🍿 Popcorn",corn:"🌽 Sweet corn",slush:"🥤 Slush",beverages:"☕ Drinks & water",freshTitle:"Freshly prepared",freshDesc:"Your snack is prepared when you order.",payTitle:"Flexible payment",payDesc:"Choose your preferred payment option at checkout.",clearTitle:"Clear pricing",clearDesc:"Review your order total before placing an order.",footerLine:"A golden little moment, every day.",ksa:"Saudi Arabia",yourOrder:"Your Order",subtotal:"Subtotal (excl. VAT)",vat:"VAT (15%)",total:"Total",vatDisclaimer:"Demo tax calculation: menu prices are treated as VAT-inclusive. Confirm the business's actual VAT setup before launch.",paymentMethod:"Payment method",card:"Visa / MC",cash:"Cash",checkout:"Continue to checkout",emptyCart:"Your cart is empty",emptyCartHint:"Add something golden from the menu.",add:"Add",added:"Added",remove:"Remove",authDesc:"Sign-in is not connected yet. Choose an option to see the integration requirements.",authNotice:"Demo only: no OTP is sent and no Google account is authenticated on this static page.",mobileOtp:"Mobile number + OTP",googleSignIn:"Continue with Google",close:"Close",phoneIntegration:"Real mobile OTP needs a trusted authentication provider or backend endpoint to send and verify one-time codes. Never trust a code typed into the browser without server verification.",googleIntegration:"Real Google Sign-In needs Google Identity Services or an OAuth/OIDC flow with server-side ID-token validation. This button does not authenticate you.",checkoutTitle:"Delivery details",checkoutDesc:"Enter details to preview your order. This demo will not submit a real order or charge you.",fullName:"Full name",mobileNumber:"Saudi mobile number",deliveryAddress:"Delivery address",orderNotes:"Order notes (optional)",previewOrder:"Preview demo order",demoOrderTitle:"Order preview ready",demoOrderNotice:"This is only a local preview. No order was sent to a store and no payment was taken.",done:"Done",orderPreview:"Demo order preview",secureBackend:"For a real launch, connect a backend to validate prices, calculate tax, create the order and initiate payment securely.",emptyError:"Please add at least one item to your cart.",invalidPhone:"Please enter a valid Saudi mobile number (for example, 05XXXXXXXX).",subtotalShort:"Subtotal",items:"items"},
+ ar:{brandSub:"الذرة الصفراء - السعودية",signIn:"تسجيل الدخول",cart:"السلة",heroBadge:"✨ وجهتك المفضلة للوجبات الخفيفة في السعودية",heroTitle:"استمتع بقرمشة الذهب",heroDesc:"فشار طازج وذرة حلوة دافئة ومشروبات سلاش مثلجة ومشروبات منعشة للحظاتك السعيدة.",explore:"استكشف القائمة ↓",menuTitle:"قائمتنا",menuSub:"وجبات خفيفة طازجة ومشروبات باردة تُحضّر عند الطلب.",vatNote:"الأسعار بالريال السعودي · الضريبة مشمولة",all:"كل الأصناف",popcorn:"🍿 فشار",corn:"🌽 ذرة حلوة",slush:"🥤 سلاش",beverages:"☕ مشروبات ومياه",freshTitle:"تحضير طازج",freshDesc:"نحضّر وجبتك عند تقديم الطلب.",payTitle:"خيارات دفع مرنة",payDesc:"اختر وسيلة الدفع المناسبة عند إتمام الطلب.",clearTitle:"أسعار واضحة",clearDesc:"راجع الإجمالي قبل تأكيد طلبك.",footerLine:"لحظة ذهبية صغيرة كل يوم.",ksa:"المملكة العربية السعودية",yourOrder:"طلبك",subtotal:"المجموع الفرعي (قبل الضريبة)",vat:"ضريبة القيمة المضافة (15%)",total:"الإجمالي",vatDisclaimer:"حساب ضريبي تجريبي: الأسعار تعتبر شاملة للضريبة. تحقق من إعدادات الضريبة الفعلية قبل الإطلاق.",paymentMethod:"طريقة الدفع",card:"فيزا / ماستركارد",cash:"نقدًا",checkout:"متابعة إتمام الطلب",emptyCart:"سلتك فارغة",emptyCartHint:"أضف شيئًا لذيذًا من القائمة.",add:"إضافة",added:"تمت الإضافة",remove:"حذف",authDesc:"تسجيل الدخول غير متصل حاليًا. اختر خيارًا لمعرفة متطلبات الربط.",authNotice:"للتجربة فقط: لن يتم إرسال رمز تحقق أو تسجيل الدخول إلى Google في هذه الصفحة الثابتة.",mobileOtp:"رقم الجوال + رمز التحقق",googleSignIn:"المتابعة باستخدام Google",close:"إغلاق",phoneIntegration:"يتطلب التحقق الحقيقي عبر الجوال مزود مصادقة موثوقًا أو خادمًا لإرسال الرموز والتحقق منها. لا تعتمد على رمز يكتبه المستخدم في المتصفح دون تحقق من الخادم.",googleIntegration:"يتطلب تسجيل Google الحقيقي خدمة Google Identity Services أو OAuth/OIDC مع التحقق من الرمز في الخادم. هذا الزر لا يسجل دخولك.",checkoutTitle:"بيانات التوصيل",checkoutDesc:"أدخل البيانات لمعاينة الطلب. لن يرسل هذا النموذج طلبًا حقيقيًا ولن يخصم أي مبلغ.",fullName:"الاسم الكامل",mobileNumber:"رقم الجوال السعودي",deliveryAddress:"عنوان التوصيل",orderNotes:"ملاحظات الطلب (اختياري)",previewOrder:"معاينة الطلب التجريبي",demoOrderTitle:"معاينة الطلب جاهزة",demoOrderNotice:"هذه معاينة محلية فقط. لم يتم إرسال الطلب إلى متجر ولم يتم تحصيل أي مبلغ.",done:"تم",orderPreview:"معاينة طلب تجريبي",secureBackend:"للإطلاق الفعلي، اربط خادمًا للتحقق من الأسعار وحساب الضريبة وإنشاء الطلب وبدء الدفع بأمان.",emptyError:"يرجى إضافة صنف واحد على الأقل إلى السلة.",invalidPhone:"يرجى إدخال رقم جوال سعودي صحيح مثل 05XXXXXXXX.",subtotalShort:"المجموع الفرعي",items:"أصناف"}
+};
+let language="en",activeCategory="all",cart={};
+const $=id=>document.getElementById(id);
+const t=key=>(i18n[language]&&i18n[language][key])||i18n.en[key]||key;
+const money=n=>new Intl.NumberFormat(language==="ar"?"ar-SA":"en-SA",{style:"currency",currency:"SAR"}).format(n);
+function setLanguage(lang){language=lang==="ar"?"ar":"en";document.documentElement.lang=language;document.documentElement.dir=language==="ar"?"rtl":"ltr";document.body.dir=document.documentElement.dir;$("langEN").classList.toggle("active",language==="en");$("langAR").classList.toggle("active",language==="ar");document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;if(t(k))el.textContent=t(k)});renderCategories();renderProducts();renderCart();updateCheckoutSummary()}
+function renderCategories(){const cats=[["all","all"],["popcorn","popcorn"],["corn","corn"],["slush","slush"],["beverages","beverages"]];$("categories").innerHTML=cats.map(([key,cat])=>`<button type="button" class="cat-btn ${activeCategory===cat?"active":""}" data-cat="${cat}" onclick="filterCategory('${cat}')">${escapeHTML(t(key))}</button>`).join("")}
+function filterCategory(cat){activeCategory=cat;renderCategories();renderProducts()}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function renderProducts(){const list=products.filter(p=>activeCategory==="all"||p.cat===activeCategory);$("menuGrid").innerHTML=list.length?list.map(p=>`<article class="product-card"><div class="product-art"><span class="product-tag">${escapeHTML(p.tag[language])}</span><span aria-hidden="true">${p.emoji}</span></div><div class="product-info"><h3>${escapeHTML(p.name[language])}</h3><p>${escapeHTML(p.desc[language])}</p><div class="product-bottom"><span class="price">${money(p.price)} <small>/${language==="ar"?"قطعة":"item"}</small></span><button class="add-btn" type="button" onclick="addToCart('${p.id}')">＋ ${t("add")}</button></div></div></article>`).join(""):`<div class="empty-state">${t("emptyCart")}</div>`}
+function addToCart(id){if(!products.some(p=>p.id===id))return;cart[id]=(cart[id]||0)+1;renderCart();const badge=$("cartCount");badge.animate?.([{transform:"scale(1)"},{transform:"scale(1.2)"},{transform:"scale(1)"}],{duration:220})}
+function changeQty(id,delta){if(!cart[id])return;cart[id]+=delta;if(cart[id]<=0)delete cart[id];renderCart()}
+function removeFromCart(id){delete cart[id];renderCart()}
+function cartCount(){return Object.values(cart).reduce((a,b)=>a+b,0)}
+function cartSubtotal(){return products.reduce((sum,p)=>sum+(cart[p.id]||0)*p.price,0)}
+function renderCart(){const count=cartCount();$("cartCount").textContent=count;const selected=products.filter(p=>cart[p.id]);$("cartItems").innerHTML=selected.length?selected.map(p=>`<div class="cart-line"><div class="cart-emoji" aria-hidden="true">${p.emoji}</div><div><h4>${escapeHTML(p.name[language])}</h4><div class="unit-price">${money(p.price)} / ${language==="ar"?"قطعة":"item"}</div><div class="qty"><button type="button" onclick="changeQty('${p.id}',-1)" aria-label="Decrease quantity">−</button><span>${cart[p.id]}</span><button type="button" onclick="changeQty('${p.id}',1)" aria-label="Increase quantity">＋</button></div><button class="remove-btn" type="button" onclick="removeFromCart('${p.id}')">${t("remove")}</button></div><div class="line-total">${money(p.price*cart[p.id])}</div></div>`).join(""):`<div class="cart-empty"><div class="emoji">🛒</div><h3>${t("emptyCart")}</h3><p>${t("emptyCartHint")}</p></div>`;const total=cartSubtotal();/* Prices in this demo are VAT-inclusive. Extract VAT from gross at 15%. */const net=total/1.15;const vat=total-net;$("subtotal").textContent=money(net);$("vatAmount").textContent=money(vat);$("grandTotal").textContent=money(total);updateCheckoutSummary()}
+function toggleCart(){const overlay=$("cartOverlay");overlay.hidden=!overlay.hidden;if(!overlay.hidden){renderCart();overlay.querySelector(".icon-btn").focus()}}
+function openAuth(){ $("authModal").hidden=false;$("authStatus").textContent="";$("authModal").querySelector(".modal-close").focus()}
+function closeModal(id){$(id).hidden=true}
+function showAuthInfo(kind){$("authStatus").textContent=kind==="phone"?t("phoneIntegration"):t("googleIntegration")}
+function beginCheckout(){if(!cartCount()){alert(t("emptyError"));return}$("cartOverlay").hidden=true;$("checkoutModal").hidden=false;updateCheckoutSummary();$("customerName").focus()}
+function updateCheckoutSummary(){if(!$("checkoutSummary"))return;$("checkoutSummary").textContent=`${t("orderPreview")}: ${cartCount()} ${t("items")} · ${t("total")}: ${money(cartSubtotal())}. ${t("secureBackend")}`}
+$("checkoutForm").addEventListener("submit",event=>{event.preventDefault();if(!cartCount()){ $("checkoutStatus").textContent=t("emptyError");return}const phone=$("customerPhone").value.replace(/[\s()-]/g,"");if(!/^(?:\+?966|0)?5\d{8}$/.test(phone)){$("checkoutStatus").textContent=t("invalidPhone");$("customerPhone").focus();return}const name=$("customerName").value.trim();if(!name)return;const payment=document.querySelector('input[name="payment"]:checked')?.value||"mada";const lines=products.filter(p=>cart[p.id]).map(p=>`${p.name[language]} × ${cart[p.id]} — ${money(p.price*cart[p.id])}`).join("\n");$("resultText").textContent=`${name} · ${$("customerAddress").value.trim()}\n${lines}\n${t("total")}: ${money(cartSubtotal())}\n${t("paymentMethod")}: ${payment.toUpperCase()}\n\n${t("secureBackend")}`;$("checkoutModal").hidden=true;$("resultModal").hidden=false;$("checkoutForm").reset()});
+$("year").textContent=new Date().getFullYear();
+setLanguage("en");
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){for(const id of ["resultModal","checkoutModal","authModal","cartOverlay"])if(!$(id).hidden){$(id).hidden=true;break}}});
+</script>
+</body>
+</html>
